@@ -1,0 +1,78 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Arial,sans-serif;
+}
+
+body{
+  background:linear-gradient(135deg,#20b8ee,#7867cf,#e91e63);
+  min-height:100vh;
+}
+
+.app{
+  max-width:500px;
+  margin:auto;
+  background:#fff;
+  min-height:100vh;
+}
+
+.header{
+  text-align:center;
+  color:#fff;
+  padding:25px 15px;
+  background:linear-gradient(135deg,#20b8ee,#7867cf,#e91e63);
+}
+
+.logo{
+  font-size:60px;
+  animation:heartBeat 1.2s infinite;
+}
+
+@keyframes heartBeat{
+  0%{transform:scale(1);}
+  50%{transform:scale(1.12);}
+  100%{transform:scale(1);}
+}
+
+.ticker{
+  overflow:hidden;
+  white-space:nowrap;
+  margin-top:12px;
+}
+
+.ticker span{
+  display:inline-block;
+  animation:scroll 15s linear infinite;
+}
+
+@keyframes scroll{
+  from{transform:translateX(100%);}
+  to{transform:translateX(-100%);}
+}
+
+#content{
+  padding:20px;
+  min-height:500px;
+}
+
+.nav{
+  position:fixed;
+  bottom:0;
+  left:0;
+  right:0;
+  max-width:500px;
+  margin:auto;
+  display:flex;
+  justify-content:space-around;
+  background:#fff;
+  border-top:1px solid #ddd;
+}
+
+.nav button{
+  flex:1;
+  padding:12px;
+  border:none;
+  background:none;
+  font-size:16px;
+}
